@@ -12,6 +12,7 @@ body {
 }
 
 /* header */
+/*logo*/
 .header {
   font-weight: 500;
   font-size: 14px;
@@ -26,21 +27,48 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo1 {
+.logo_part1 {
   color: var(--fist-text-color);
 }
-.logo2 {
+.logo_part2 {
   color: #000000;
 }
 
-.header-nav-link-studio .header-mail {
-  color: var(--fist-text-color);
-}
-.header-nav-link-portfolio .header-nav-link {
+/*nav*/
+.header-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--second-text-color);
 }
-.headrt-tell {
+
+.header-nav:hover,
+.header-nav:focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--fist-text-color);
+}
+
+/*mail_tell*/
+
+.header-mail-tell {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--fourth-text-color);
+}
+
+.header-mail-tell :hover,
+.header-mail-tell :focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--fist-text-color);
 }
 
 /*hero*/
@@ -62,6 +90,7 @@ body {
 }
 
 .order {
+  cursor: pointer;
   background-color: var(--fist-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -127,43 +156,25 @@ body {
   background-color: #2f303a;
 }
 
-.adress1 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--third-text-color);
-}
-.adress2 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
-  color: var(--footer-nav-text-color);
-}
-
 /* portfolio */
 
 .order2 {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: #2196f3;
-  color: var(--third-text-color);
-  border: 1px solid #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--second-text-color);
 }
 
-.order3 {
+.order2:hover {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  background-color: #f5f4fa;
-  color: var(--second-text-color);
+  color: var(--third-text-color);
+  background-color: var(--fist-text-color);
 }
 
 .project-title {
@@ -180,4 +191,19 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--fourth-text-color);
+}
+
+.adress1 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+}
+.adress2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: var(--footer-nav-text-color);
 }
