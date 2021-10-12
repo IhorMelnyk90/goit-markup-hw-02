@@ -2,23 +2,35 @@
   --fist-text-color: #2196f3;
   --second-text-color: #212121;
   --third-text-color: #ffffff;
-  --fourth-text-color: #757575;
+  --general-text-color: #757575;
   --footer-nav-text-color: rgba(255, 255, 255, 0.6);
+  --fifth-color: #000000;
+  --general-buckground-color: #ffffff;
+  --first-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
+  background-color: var(--general-buckground-color);
+}
+ul {
+  list-style: none;
+}
+button {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+a {
+  text-decoration: none;
+}
+link {
+  text-decoration: none;
 }
 
-/* header */
 /*logo*/
-.header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
 
 .logo {
   font-family: Raleway;
@@ -26,15 +38,18 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-.logo_part1 {
   color: var(--fist-text-color);
 }
+
 .logo_part2 {
-  color: #000000;
+  color: var(--fifth-color);
 }
 
 /*nav*/
+.header-nav .current {
+  color: var(--fist-text-color);
+}
+
 .header-nav {
   font-weight: 500;
   font-size: 14px;
@@ -45,36 +60,13 @@ body {
 
 .header-nav:hover,
 .header-nav:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--fist-text-color);
-}
-
-/*mail_tell*/
-
-.header-mail-tell {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--fourth-text-color);
-}
-
-.header-mail-tell :hover,
-.header-mail-tell :focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--fist-text-color);
 }
 
 /*hero*/
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--first-background-color);
 }
 
 /*banner*/
@@ -83,21 +75,15 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: var(--third-text-color);
 }
 
 .order {
-  cursor: pointer;
   background-color: var(--fist-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--third-text-color);
 }
@@ -109,7 +95,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--second-text-color);
 }
 .skills-info {
@@ -117,7 +102,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--fourth-text-color);
+  color: var(--general-text-color);
 }
 
 /*section_work*/
@@ -126,18 +111,20 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 
 /*section_team*/
 
+.team {
+  background-color: var(--team-background-color);
+}
+
 .team-memb-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
@@ -145,34 +132,34 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
-  color: var(--fourth-text-color);
+  color: var(--general-text-color);
 }
 
 /*footer*/
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--first-background-color);
 }
 
 /* portfolio */
+.active-button {
+  background-color: var(--fist-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
 
 .order2 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 
 .order2:hover {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--third-text-color);
   background-color: var(--fist-text-color);
 }
@@ -190,7 +177,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--fourth-text-color);
+  color: var(--general-text-color);
 }
 
 .adress1 {
@@ -205,5 +192,9 @@ body {
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
-  color: var(--footer-nav-text-color);
+  color: var(--general-text-color);
+}
+.adress2:hover,
+.adress2:focus {
+  color: var(--fist-text-color);
 }

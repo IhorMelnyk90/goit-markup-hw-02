@@ -7,55 +7,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio</title>
   </head>
+
   <body>
-    <header class="header">
+    <header>
       <nav>
         <a class="logo" href="./index.html">
-          <span class="logo_part1">Web</span
-          ><span class="logo_part2">Studio</span></a
+          Web<span class="logo_part2">Studio</span></a
         >
         <ul>
           <li class="header-nav">
             <a href="./index.html">Студия</a>
           </li>
           <li class="header-nav">
-            <a href="./portfolio.html">Портфолио</a>
+            <a href="./portfolio.html" class="current">Портфолио</a>
           </li>
           <li class="header-nav">
-            <a href="">Контакты</a>
+            <a href="#">Контакты</a>
           </li>
         </ul>
       </nav>
       <ul>
         <li>
-          <a class="header-mail-tell" href="mailto:info@devstudio.com"
+          <a class="adress2" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a class="header-mail-tell" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
+          <a class="adress2" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
 
     <main>
-      <h1>Наши работы</h1>
       <!--Filter_panel-->
-      <div>
-        <button class="order2" type="button">Все</button>
-        <button class="order2 type="button">Веб-сайты</button>
-        <button class="order2 type="button">Приложения</button>
-        <button class="order2" type="button">Дизайн</button>
-        <button class="order2 type="button">Маркетинг</button>
-      </div>
+      <section>
+        <!-- <h2>Наши работы</h2> -->
+        <ul>
+          <li><button class="active-button" type="button">Все</button></li>
+          <li><button class="order2" type="button">Веб-сайты</button></li>
+          <li><button class="order2" type="button">Приложения</button></li>
+          <li><button class="order2" type="button">Дизайн</button></li>
+          <li><button class="order2" type="button">Маркетинг</button></li>
+        </ul>
+      </section>
+
       <!--portfolio-->
       <section>
         <ul>
@@ -121,10 +122,9 @@
     </main>
     <footer class="footer">
       <a class="logo" href="./index.html">
-          <span class="logo_part1">Web</span
-          ><span class="logo_part2">Studio</span></a
-        >
-      <address>
+        Web<span class="logo_part2">Studio</span></a
+      >
+      <div>
         <p class="adress1">г. Киев, пр-т Леси Украинки, 26</p>
         <ul>
           <li>
@@ -136,7 +136,7 @@
             <a class="adress2" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
-      </address>
+      </div>
     </footer>
   </body>
 </html>
