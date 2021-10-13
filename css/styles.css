@@ -5,14 +5,13 @@
   --general-text-color: #757575;
   --footer-nav-text-color: rgba(255, 255, 255, 0.6);
   --fifth-color: #000000;
-  --general-buckground-color: #ffffff;
   --first-background-color: #2f303a;
   --team-background-color: #f5f4fa;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--general-buckground-color);
+  background-color: var(--third-text-color);
 }
 ul {
   list-style: none;
@@ -44,13 +43,20 @@ link {
 .logo_part2 {
   color: var(--fifth-color);
 }
-
-/*nav*/
-.header-nav .current {
-  color: var(--fist-text-color);
+.logo_part2_1 {
+  color: var(--third-text-color);
 }
 
-.header-nav {
+/*nav*/
+.navigation-current {
+  color: var(--fist-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.navigation {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -58,8 +64,8 @@ link {
   color: var(--second-text-color);
 }
 
-.header-nav:hover,
-.header-nav:focus {
+.navigation:hover,
+.navigation:focus {
   color: var(--fist-text-color);
 }
 
@@ -70,7 +76,9 @@ link {
 }
 
 /*banner*/
-
+h1 {
+  text-transform: uppercase;
+}
 .banner {
   font-weight: 900;
   font-size: 44px;
@@ -91,6 +99,7 @@ link {
 /*section1*/
 
 .skills {
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -145,6 +154,7 @@ link {
 /* portfolio */
 .active-button {
   background-color: var(--fist-text-color);
+  color: var(--third-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
